@@ -39,8 +39,8 @@ class Questions extends Component {
                 <Card>
                     <h3>{question.id}. {question.question_name}</h3>
                     <p>{question.question}</p>
-                    <h4 onClick={this.toggleFunction}>Solution <Icon type={this.state.toggleClass?'plus-square':'minus-square'} /></h4>
-                    <Highlight language="javascript" className={this.state.toggleClass?'hidden solutionLine':'solutionLine'}>{question.solution}</Highlight>
+                    <h4 onClick={this.toggleFunction}>Solution <Icon type={this.state.toggleClass?'minus-square':'plus-square'} /></h4>
+                    <Highlight language="javascript" className={this.state.toggleClass?'solutionLine':'hidden solutionLine'}>{question.solution}</Highlight>
                     <h4>Submitted By: {question.submitter}</h4>
                     <h4>Difficulty: {this.getDifficulty(question.difficulty)}</h4>
                 </Card>
