@@ -1,0 +1,95 @@
+/*  rust #B56357
+/// mint #b4dbc0
+/// slate #eae3ea
+/// seafoam #a7b3a5 
+/// summer sky #286da8 
+/// dark-blue-text */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1, h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #30415d;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  color: #30415d;
+  font-size: 1.5em;
+}
+
+p {
+  text-align: left;
+}
+
+.header {
+  background-color: #c1c1c22f;
+  border-bottom: 2px solid #a7b3a5 ;
+  padding: 2em 2em 0 2em;
+
+  .title {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  img {
+    height: 6vh;
+    margin: 0 1em 1em 0;
+    align-self: center;
+  }
+
+  h1, h2, p {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  .tagline {
+    margin-top: -.5em;
+  }
+}
+
+.primary {
+  background-color: #286da8;
+  color: #eae3ea
+} 
+
+
