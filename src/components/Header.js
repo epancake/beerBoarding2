@@ -10,7 +10,6 @@ export default class Header extends Component {
             <h1>Beer Boarding</h1>
         </div>
         <h2 className="tagline">Javascript Whiteboard Practice for Champions</h2>
-        {/* <h3>return (Beer ? "WhiteBoard with friends!" : "Weep") </h3> */}
       </div>
     )
   }
