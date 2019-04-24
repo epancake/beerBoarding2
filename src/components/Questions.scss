@@ -1,63 +1,77 @@
 .ant-card {
-    margin: 1em;
-    -webkit-box-shadow: -1px 1px 18px 1px rgba(194,190,194,1);
-    -moz-box-shadow: -1px 1px 18px 1px rgba(194,190,194,1);
-    box-shadow: -1px 1px 18px 1px rgba(194,190,194,1);
+  margin: 1em;
+  -webkit-box-shadow: -1px 1px 18px 1px rgba(194, 190, 194, 1);
+  -moz-box-shadow: -1px 1px 18px 1px rgba(194, 190, 194, 1);
+  box-shadow: -1px 1px 18px 1px rgba(194, 190, 194, 1);
 }
 
-h3, h4 {
-    text-align: left;
+h3,
+h4 {
+  text-align: left;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .solutionLine {
-    text-align: left;
+  text-align: left;
 }
 
 .hljs {
-    overflow-x: scroll;
-    padding: 1em;
-    padding-right: 100%;
-    background: #002b36;
-    color: #839496;
-    -webkit-text-size-adjust: none;
+  overflow-x: scroll;
+  padding: 1em;
+  padding-right: 100%;
+  background: #002b36;
+  color: #839496;
+  -webkit-text-size-adjust: none;
 }
 
 .addform {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    label {
-        margin-top: 1rem;
-    }
+  label {
+    margin-top: 1rem;
+  }
 
-    .difficulty-text {
-        max-width: 15rem;
-    }
+  .difficulty-text {
+    max-width: 15rem;
+  }
 
-    input[type='submit'] {
-        margin-top: 1rem;
-        color: #fff;
-        background-color: #1890ff;
-        border-color: #1890ff;
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
-        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
-        width: 10rem;
-        line-height: 1.499;
-        display: inline-block;
-        font-weight: 400;
-        text-align: center;
-        touch-action: manipulation;
-        cursor: pointer;
-        background-image: none;
-        border: 1px solid transparent;
-        white-space: nowrap;
-        padding: 0 15px;
-        font-size: 14px;
-        border-radius: 4px;
-        height: 32px;
-    }
+  input[type='submit'] {
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    width: 10rem;
+    line-height: 1.499;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 32px;
+  }
+}
+
+.card-buttons button {
+  margin: 1rem;
+}
+
+.difficulty {
+  float: right;
+  font-size: 11pt;
+}
+
+.solution:hover {
+  cursor: pointer;
 }

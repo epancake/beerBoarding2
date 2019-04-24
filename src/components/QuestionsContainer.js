@@ -27,6 +27,7 @@ const QuestionsContainer = ({ updateQuestion, destroyQuestion, questions }) => {
               updateQuestion={updateQuestion}
               question={question}
               key={question.id}
+              deleteQuestion={destroyQuestion}
             />
           </div>
         ))}

@@ -14,6 +14,17 @@ function handleResponse(response) {
   });
 }
 
+function handleDelete(response) {
+  if (response.ok) {
+    return response;
+  }
+
+  return response.text().then(text => {
+    const error = JSON.parse(text);
+    return Promise.reject({ ...error, status: response.status });
+  });
+}
+
 export function get(path) {
   return fetch(`${host}/${path}`, {
     method: 'get'
@@ -40,5 +51,5 @@ export function del(path, data) {
   return fetch(`${host}/${path}`, {
     method: 'delete',
     body: {}
-  }).then(handleResponse);
+  }).then(handleDelete);
 }

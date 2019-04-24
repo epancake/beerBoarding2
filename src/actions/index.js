@@ -25,7 +25,7 @@ export const updateQuestion = question => dispatch => {
   });
 };
 
-export const destroyQuestion = (id, question) => dispatch => {
+export const destroyQuestion = id => dispatch => {
   del(`questions/${id}`).then(questions => {
     dispatch(deleteQuestion(id));
   });
